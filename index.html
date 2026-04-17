@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Imagen + título -->
+  <div class="header">
+    <img src="contacto.png" alt="contact" class="logo">
+    <h2>Contact List</h2>
+  </div>
+
+  <!-- Formulario -->
+  <form id="form">
+    <input type="text" id="name" placeholder="Nombre">
+    <input type="text" id="lastname" placeholder="Apellido">
+    <input type="text" id="phone" placeholder="Telefono">
+    <input type="text" id="city" placeholder="Ciudad">
+    <input type="text" id="address" placeholder="Direccion">
+
+    <div class="gender">
+      <label><input type="radio" name="gender" value="female"> Mujer</label>
+      <label><input type="radio" name="gender" value="male"> Hombre</label>
+    </div>
+
+    <button type="submit">Agregar</button>
+  </form>
+
+  <!-- Spinner -->
+  <div id="spinner" class="hidden">Cargando...</div>
+
+  <!-- Lista -->
+  <div id="list"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
