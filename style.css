@@ -1,0 +1,182 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO */
+body {
+    background: #d6b85a; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* FORMULARIO */
+.form-card {
+    background: transparent;
+    box-shadow: none;
+}
+
+/* TITULO */
+.form-card h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* INPUTS */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #e5e5e5;
+    font-size: 14px;
+}
+
+/* GENERO */
+.gender-group {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.gender-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.gender-option input {
+    cursor: pointer;
+}
+
+/* BOTON */
+.btn-add {
+    background: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-add:hover {
+    background: #1f4fb5;
+}
+
+/* SPINNER */
+.spinner {
+    width: 18px;
+    height: 18px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* LISTA  */
+.contact-list {
+    margin-top: 40px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 20px;
+}
+
+/* OCULTAMOS EL TITULO DE CONTACTOS */
+.contact-list h3 {
+    display: none;
+}
+
+/* UL */
+#contactListContainer {
+    list-style: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ITEM */
+#contactListContainer li {
+    background: #e5e5e5;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* INFO */
+.contact-info {
+    text-align: left;
+}
+
+/* NOMBRE */
+.contact-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* DETALLES */
+.contact-detail {
+    font-size: 12px;
+    color: #555;
+}
+
+/* ICONO GENERO */
+.gender-icon {
+    margin-right: 5px;
+}
+
+/* BOTONES */
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* MENSAJE VACIO */
+.placeholder-msg {
+    text-align: center;
+    background: #e5e5e5;
+}
